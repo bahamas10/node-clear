@@ -1,5 +1,5 @@
-exec
-====
+clear
+=====
 
 Clear the terminal screen if possible
 
