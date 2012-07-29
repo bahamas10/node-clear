@@ -11,6 +11,11 @@ var clear = require('clear');
 clear();
 ```
 
+Example
+-------
+
+![Node Clear](http://daveeddy.com/static/media/github/node-clear.gif)
+
 Installation
 ------------
 
