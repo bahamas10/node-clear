@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/bahamas10/node-clear.png)](http://travis-ci.org/bahamas10/node-clear)
 clear
 =====
 
