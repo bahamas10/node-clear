@@ -2,7 +2,7 @@
   "name": "clear",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "description": "Clear the terminal screen if possible",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "url": "https://github.com/bahamas10/node-clear.git",
     "type": "git"
