@@ -15,5 +15,9 @@
   "engines": {
     "node": "*"
   },
-  "keywords": [ "ansi", "clear", "terminal" ]
+  "keywords": [
+    "ansi",
+    "clear",
+    "terminal"
+  ]
 }
