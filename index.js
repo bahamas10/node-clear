@@ -1,24 +1,12 @@
-var assert = require('assert');
-
-module.exports = function clear(opts) {
-    if (typeof (opts) === 'boolean') {
-        opts = {
-            fullClear: opts
-        };
+module.exports = function clear(fullClear = true, keepLastScreen = false) {
+    if (typeof fullClear == 'object') throw new Error('API has changed.');
+    if (fullClear) {
+        if (keepLastScreen) {
+            process.stdout.write('\n'.repeat(process.stdout.rows));
+        }
+        process.stdout.write('\x1b[2J\x1b[0f');
     }
-
-    opts = opts || {};
-    assert(typeof (opts) === 'object', 'opts must be an object');
-
-    opts.fullClear = opts.hasOwnProperty('fullClear') ?
-        opts.fullClear : true;
-
-    assert(typeof (opts.fullClear) === 'boolean',
-        'opts.fullClear must be a boolean');
-
-    if (opts.fullClear === true) {
-        process.stdout.write('\x1b[2J');
+    else {
+        process.stdout.write('\x1b[0f');
     }
-
-    process.stdout.write('\x1b[0f');
 };
