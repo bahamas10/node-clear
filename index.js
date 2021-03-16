@@ -17,7 +17,7 @@ module.exports = function clear(opts) {
         'opts.fullClear must be a boolean');
 
     if (opts.fullClear === true) {
-        process.stdout.write('\x1b[2J');
+        process.stdout.write('\n'.repeat(process.stdout.rows) + '\x1b[2J');
     }
 
     process.stdout.write('\x1b[0f');
